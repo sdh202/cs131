@@ -1,0 +1,21 @@
+    1  passwd
+    2  ping 172.31.197.164
+    3  wget www.github.com
+    4  ping 172.29.96.76
+    5  wget www.github.com
+    6  ping 172.31.197.164
+    7  cd desktop
+    8  cd ~/Desktop
+    9  mkdir CS131
+   10  cd cs131
+   11  rmdir cs131
+   12  cs CS131
+   13  cdCS131
+   14  cd CS131
+   15  cd
+   16  ls
+   17  rmdir CS131
+   18  git init
+   19  cd Desktop
+   20  mkdir ws1
+   21  history > cmds.log
