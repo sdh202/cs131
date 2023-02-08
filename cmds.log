@@ -1,0 +1,32 @@
+    1  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    2  gunzip https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    3  ls
+    4  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+    5  ls
+    6  grep -E "[1-3]\t[NY]" amazon_reviews_us_Books_v1_02.tsv
+    7  grep -E "[NY]\t[NY]*" amazon_reviews_us_Books_v1_02.tsv
+    8  grep -E "[0-500]\t[NY]\t[NY]" amazon_reviews_us_Books_v1_02.tsv
+    9  grep -E "[0-500]\t" amazon_reviews_us_Books_v1_02.tsv
+   10  grep -E "[0-500]/t" amazon_reviews_us_Books_v1_02.tsv
+   11  grep -E "[0-500]\t" amazon_reviews_us_Books_v1_02.tsv
+   12  egrep $'[0-500]\011Y' amazon_reviews_us_Books_v1_02.tsv
+   13  egrep $'[0-500]\011[YN]\011[YN]' amazon_reviews_us_Books_v1_02.tsv
+   14  egrep $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+   15  egrep $'[0-500]\011[YN]\011[N]' amazon_reviews_us_Books_v1_02.tsv
+   16  wc -l $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+   17  wc $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+   18  wc -l '[0-500]\t[YN]\t[Y]' amazon_reviews_us_Books_v1_02.tsv
+   19  wc $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+   20  egrep -c $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+   21  egrep -c $'[0-500]\011[YN]\011[N]' amazon_reviews_us_Books_v1_02.tsv
+   22  egrep '[0-500]\s+[YN]\s+[N]' amazon_reviews_us_Books_v1_02.tsv
+   23  egrep -c '[0-500]\s+[YN]\s+[N]' amazon_reviews_us_Books_v1_02.tsv
+   24  touch counts.txt
+   25  catamazon_reviews_us_Books_v1_02.tsv
+   26  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[Y]'|wc-l|>counts.txt
+   27* 
+   28  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[N]'|wc-l|>counts.txt
+   29  git add ws2
+   30  touch ws2
+   31  git add ws2
+   32  history > cmds.log
