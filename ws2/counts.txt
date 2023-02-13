@@ -1,0 +1,11 @@
+Number of Lines in "verified" true Reviews:
+229346
+
+Number of Lines in "unverified" Reviews:
+2876174
+
+Number of Words in "verified" true reviews:
+44402864
+
+Number of Words in "unverified" reviews:
+505766888

@@ -1,0 +1,318 @@
+    1  passwd
+    2  ping 172.31.197.164
+    3  wget www.github.com
+    4  ping 172.29.96.76
+    5  wget www.github.com
+    6  ping 172.31.197.164
+    7  cd desktop
+    8  cd ~/Desktop
+    9  mkdir CS131
+   10  cd cs131
+   11  rmdir cs131
+   12  cs CS131
+   13  cdCS131
+   14  cd CS131
+   15  cd
+   16  ls
+   17  rmdir CS131
+   18  git init
+   19  cd Desktop
+   20  mkdir ws1
+   21  history > cmds.log
+   22  git status
+   23  cd ws1
+   24  ls
+   25  cd
+   26  cd ws1
+   27  cd
+   28  cd cmds.log
+   29  mv cmds.log ws1
+   30  cd ws1
+   31  ls
+   32  git add ws1
+   33  ls
+   34  cd
+   35  git add ws1
+   36  ls
+   37  git status
+   38  git commit -m "Added cmds.log"
+   39    git config --global user.email "you@example.com"
+   40    git config --global user.email "sarthak.dhomne@sjsu.edu"
+   41    git config --global user.name "Sarthak"
+   42  git commit -m "Added cmds.log"
+   43  git branch
+   44  git remote add origin https://github.com/sdh202/cs131.git
+   45  git branch -M main
+   46  git push -u origin main
+   47  git remote add origin https://github.com/sdh202/cs131.git
+   48  git branch -M main
+   49  git push -u origin main
+   50  doskey /history
+   51  ls
+   52  doskey /history
+   53  /history
+   54  /HISTORY
+   55  ls
+   56  git status
+   57  git add ws1
+   58  git status
+   59  ls
+   60  cd ws1
+   61  ls
+   62  cd
+   63  ls
+   64  git commit -m "added ws1"
+   65  git remote add origin https://github.com/sdh202/cs131.git
+   66  git branch -M main
+   67  git push -u origin main
+   68  ping 172.31.197.164
+   69  wget www.github.com
+   70  ls
+   71  git init
+   72  mkdir ws1
+   73  git add ws1
+   74  history > cmds.log
+   75  move cmds.log ws1
+   76  mv cmds.log ws1
+   77  ls
+   78  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   79  grep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   80  grep "verified
+   81  grep "verified"
+   82  grep "verified" amazon_reviews_us_Books_v1_02.tsv
+   83  amazon_reviews_us_Books_v1_02.tsv.gz
+   84  ls
+   85  cd amazon_reviews_us_Books_v1_02.tsv.gz
+   86  grep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   87  grep -n "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   88  grep -n "e" amazon_reviews_us_Books_v1_02.tsv.gz
+   89  grep -n "unverified" amazon_reviews_us_Books_v1_02.tsv.gz
+   90  grep "unverified" amazon_reviews_us_Books_v1_02.tsv.gz
+   91  grep -c "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   92  grep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   93  grep "a" amazon_reviews_us_Books_v1_02.tsv.gz
+   94  grep -a "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   95  grep verified amazon_reviews_us_Books_v1_02.tsv.gz
+   96  grep -a verified amazon_reviews_us_Books_v1_02.tsv.gz
+   97  grep -a unverified amazon_reviews_us_Books_v1_02.tsv.gz
+   98  zgrep verified amazon_reviews_us_Books_v1_02.tsv.gz
+   99  zgrep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+  100  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  101  extract amazon_reviews_us_Books_v1_02.tsv.gz
+  102  tar xvf amazon_reviews_us_Books_v1_02.tsv.gz
+  103  ls
+  104  tar zxvf amazon_reviews_us_Books_v1_02.tsv.gz
+  105  unzip amazon_reviews_us_Books_v1_02.tsv.gz
+  106  extract amazon_reviews_us_Books_v1_02.tsv.gz
+  107  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  108  ls
+  109  grep "verified" amazon_reviews_us_Books_v1_02.tsv
+  110  grep -e "verified" amazon_reviews_us_Books_v1_02.tsv
+  111  grep -n "verified" amazon_reviews_us_Books_v1_02.tsv
+  112  grep -E "verified" amazon_reviews_us_Books_v1_02.tsv
+  113  cat amazon_reviews_us_Books_v1_02.tsv
+  114  grep -E "unverified" amazon_reviews_us_Books_v1_02.tsv
+  115  grep -n 'verified' amazon_reviews_us_Books_v1_02.tsv
+  116  grep -E -w "verified" amazon_reviews_us_Books_v1_02.tsv
+  117  grep -w "verified" amazon_reviews_us_Books_v1_02.tsv
+  118  grep -h "verified" amazon_reviews_us_Books_v1_02.tsv
+  119  grep -e "unverified" amazon_reviews_us_Books_v1_02.tsv
+  120  grep -e "verified" amazon_reviews_us_Books_v1_02.tsv
+  121  grep -w "verified" amazon_reviews_us_Books_v1_02.tsv
+  122  grep -w "unverified" amazon_reviews_us_Books_v1_02.tsv
+  123  cat amazon_reviews_us_Books_v1_02.tsv | head -n 1
+  124  cat amazon_reviews_us_Books_v1_02.tsv | head -n 10
+  125  view amazon_reviews_us_Books_v1_02.tsv
+  126  grep -w "T" amazon_reviews_us_Books_v1_02.tsv
+  127  marketplace     customer_id     review_id       product_id      product_parent  product_title   product_category        star_rating     helpful_votes   total_votes  vine    verified_purchase       review_headline review_body     review_date
+  128  grep -w 'N'.(\t).'Y' amazon_reviews_us_Books_v1_02.tsv
+  129  grep -w 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  130  grep -E 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  131  grep -E -w 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  132  egrep -w 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  133  egrep -w "N"."\t"."Y" amazon_reviews_us_Books_v1_02.tsv
+  134  egrep -w "N"."\t" amazon_reviews_us_Books_v1_02.tsv
+  135  egrep -w "N       N" amazon_reviews_us_Books_v1_02.tsv
+  136  egrep -w "N       Y" amazon_reviews_us_Books_v1_02.tsv
+  137  egrep "N       Y" amazon_reviews_us_Books_v1_02.tsv
+  138  egrep "Y       Y" amazon_reviews_us_Books_v1_02.tsv
+  139  egrep "Y       " amazon_reviews_us_Books_v1_02.tsv
+  140  egrep "N."       "."Y" amazon_reviews_us_Books_v1_02.tsv
+  141  grep "Y      Y " amazon_reviews_us_Books_v1_02.tsv
+  142  grep "Y      Y" amazon_reviews_us_Books_v1_02.tsv
+  143  grep "Y/tY" amazon_reviews_us_Books_v1_02.tsv
+  144  egrep "Y/tY" amazon_reviews_us_Books_v1_02.tsv
+  145  grep -E "Y/tY" amazon_reviews_us_Books_v1_02.tsv
+  146  grep -E "Y/t" amazon_reviews_us_Books_v1_02.tsv
+  147  grep -E "Y\tY" amazon_reviews_us_Books_v1_02.tsv
+  148  grep  "Y\tY" amazon_reviews_us_Books_v1_02.tsv
+  149  grep  "N\tY" amazon_reviews_us_Books_v1_02.tsv
+  150  grep -E "N\tY" amazon_reviews_us_Books_v1_02.tsv
+  151  grep -E "Y[[:space:]]\+Y" amazon_reviews_us_Books_v1_02.tsv
+  152  grep -E "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  153  grep -E "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  154  grep -E "N" amazon_reviews_us_Books_v1_02.tsv
+  155  grep -E "N\t" amazon_reviews_us_Books_v1_02.tsv
+  156  grep -E -w "N\t" amazon_reviews_us_Books_v1_02.tsv
+  157  grep -E -w "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  158  grep -E "N       N" amazon_reviews_us_Books_v1_02.tsv
+  159  grep -E -w "N       N" amazon_reviews_us_Books_v1_02.tsv
+  160  grep -E -w "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  161  grep -E "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  162  grep -w "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  163  grep -w "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  164  grep -w "N[[:\t:]]\+N" amazon_reviews_us_Books_v1_02.ts
+  165  grep -w "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  166  grep -w "N[[:\t:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  167  grep -w "N[[:space:]]\+Y" amazon_reviews_us_Books_v1_02.tsv
+  168  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  169  gunzip https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  170  ls
+  171  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  172  ls
+  173  grep -E "[1-3]\t[NY]" amazon_reviews_us_Books_v1_02.tsv
+  174  grep -E "[NY]\t[NY]*" amazon_reviews_us_Books_v1_02.tsv
+  175  grep -E "[0-500]\t[NY]\t[NY]" amazon_reviews_us_Books_v1_02.tsv
+  176  grep -E "[0-500]\t" amazon_reviews_us_Books_v1_02.tsv
+  177  grep -E "[0-500]/t" amazon_reviews_us_Books_v1_02.tsv
+  178  grep -E "[0-500]\t" amazon_reviews_us_Books_v1_02.tsv
+  179  egrep $'[0-500]\011Y' amazon_reviews_us_Books_v1_02.tsv
+  180  egrep $'[0-500]\011[YN]\011[YN]' amazon_reviews_us_Books_v1_02.tsv
+  181  egrep $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  182  egrep $'[0-500]\011[YN]\011[N]' amazon_reviews_us_Books_v1_02.tsv
+  183  wc -l $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  184  wc $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  185  wc -l '[0-500]\t[YN]\t[Y]' amazon_reviews_us_Books_v1_02.tsv
+  186  wc $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  187  egrep -c $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  188  egrep -c $'[0-500]\011[YN]\011[N]' amazon_reviews_us_Books_v1_02.tsv
+  189  egrep '[0-500]\s+[YN]\s+[N]' amazon_reviews_us_Books_v1_02.tsv
+  190  egrep -c '[0-500]\s+[YN]\s+[N]' amazon_reviews_us_Books_v1_02.tsv
+  191  touch counts.txt
+  192  catamazon_reviews_us_Books_v1_02.tsv
+  193  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[Y]'|wc-l|>counts.txt
+  194  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[N]'|wc-l|>counts.txt
+  195  git add ws2
+  196  touch ws2
+  197  git add ws2
+  198  history > cmds.log
+  199  git add cmds.log
+  200  git status
+  201  mv cmds.log ws2
+  202  mv counts.txt ws2
+  203  git status
+  204  git commit -m "Added ws2"
+  205  git push origin main
+  206  mkdir ws2
+  207  ls
+  208  cd ws2
+  209  mkdir ws2
+  210  del ws2
+  211  rm ws2
+  212  ls
+  213  mkdir ws2
+  214  ls
+  215  git add ws2
+  216  mv cmds.log ws2
+  217  ls
+  218  ls cmds.log
+  219  git status
+  220  ls
+  221  history > cmds.log
+  222  ls
+  223  mv cmds.log ws2
+  224  mv counts.txt ws2
+  225  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[N]'|wc-l|>counts.txt
+  226  touch counts.txt
+  227  mv counts.txt ws2
+  228  git status
+  229  ls
+  230  ls ws2
+  231  git commit -m "ws2"
+  232  git push origin main
+  233  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
+  234  git push origin main
+  235  ls
+  236  grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  237  less amazon_reviews_us_Books_v1_02.tsv
+  238  grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  239  head -n10 amazon_reviews_us_Books_v1_02.tsvgrep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  240  head -n10 amazon_reviews_us_Books_v1_02.tsv | grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  241  grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  242  less amazon_reviews_us_Books_v1_02.tsv
+  243  grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  244  egrep -c '[0-500]\s+[YN]\s+[N]' amazon_reviews_us_Books_v1_02.tsv
+  245  grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  246  grep -w "N[[:\t:]]\+N" amazon_reviews_us_Books_v1_02.ts
+  247  grep -E "[0-500]\t" amazon_reviews_us_Books_v1_02.tsv
+  248  grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  249  grep -E '(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  250  grep -E $'(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  251  grep '(.*\t){11}Y\t'amazon_reviews_us_Books_v1_02.tsv
+  252  grep "(.*\t){11}Y\t"amazon_reviews_us_Books_v1_02.tsv
+  253  grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv
+  254  grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsvgrep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv
+  255  grep -E $'(.*\t){11}N\t' amazon_reviews_us_Books_v1_02.tsv
+  256* wc -l | $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv
+  257  wc -l | grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv
+  258  cat | grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv | wc -l
+  259* cat | grep -E $'(.*\t){11}N\t' amazon_reviews_us_B
+  260  man wc
+  261* wc -c amazon_reviews_us_Books_v1_02.tsv
+  262  wc -l | grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv
+  263  wc -l $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv
+  264  man wc
+  265  cat | grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  266  cat | grep -E $'(.*\t){11}N\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  267  grep -E $'(.*\t){11}N\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  268  cat | grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  269  cat | grep -E $'(.*\t){11}N\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  270  wc -w amazon_reviews_us_Books_v1_02.tsv
+  271  ls
+  272  ls ws2
+  273  cd ws2
+  274  cd counts.txt
+  275  ls counts.txt
+  276  cat counts.txt
+  277  nano counts.txt
+  278  mv counts.txt home
+  279  ls
+  280  rm home
+  281  ls
+  282  home
+  283  rm counts.txt
+  284  cd
+  285  ls
+  286  cd ws2
+  287  ls
+  288  cd
+  289  ls
+  290  ls ws2
+  291  cd counts.txt
+  292  rm counts.txt
+  293  touch counts.txt
+  294  ls
+  295  grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv | wc -l > counts.txt
+  296  cat counts.txt
+  297  grep -E $'(.*\t){11}N\t' amazon_reviews_us_Books_v1_02.tsv | wc -l >> counts.txt
+  298  cat counts.txt
+  299  grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv | wc -w
+  300  grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv | wc -w >> counts.txt
+  301  grep -E $'(.*\t){11}N\t' amazon_reviews_us_Books_v1_02.tsv | wc -w >> counts.txt
+  302  cat counts.txt
+  303  nano counts.txt
+  304  cat counts.txt
+  305  ls
+  306  ls ws2
+  307  cat cmds.log
+  308  nano cmds.log
+  309  rm cmds.log
+  310  ls
+  311  cd ws2
+  312  ls
+  313  rm cmds.log
+  314  lsls
+  315  ls
+  316  cd
+  317  ls
+  318  history > cmds.log
