@@ -1,0 +1,14 @@
+Task 1: Customers that are top 3 Reviewers - Most Reviews: First Column is number of Reviews and Second Column is Customer ID
+   21922 50122160
+   9964 50732546
+   2664 52615377
+
+Task 2: Top 3 Most Reviewed Products: First Column is number of Reviews, and Second Column is the Product ID
+   4625 043935806X
+   3739 0439139597
+   2666 0525947647
+
+The Product titles for these top 3 most reviewed products:
+1. Harry Potter and the Order of the Phoenix
+2. Harry Potter and the Goblet of Fire
+3. Lies and the Lying Liars Who Tell Them
