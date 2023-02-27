@@ -1,0 +1,27 @@
+  1  vim ~/.bashrc
+  2  cd
+  3  mkdir ws4
+  4  cd ws4
+  5  mkdir CUSTOMERS
+  6  mkdir PRODUCTS
+  7  head -n 10 amazon_reviews_us_Books_v1_02.tsv
+  8  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > customerID.txt
+  9  mv customerID.txt ws4/CUSTOMERS
+ 10  cd ws4/CUSTOMERS
+ 11  cd
+ 12  cd ws4
+ 13  egrep $'(.*\t){3}0805076069\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > productID.txt
+ 14  mv productID.txt ws4/PRODUCTS
+ 15  cd
+ 16  cd ws4/CUSTOMERS
+ 17  cd
+ 18  awk '{sum+=$1} END {print sum/NR}' customerID.txt | bc
+ 19  cd
+ 20  cd ws4/PRODUCTS/
+ 21  awk '{sum+=$1} END {print sum/NR}' productID.txt | bc
+ 22  mv productID.txt 0805076069.txt
+ 23  cd
+ 24  cd ws4/CUSTOMERS/
+ 25  mv customerID.txt 50732546.txt
+ 26  cd
+ 27  history > cmds.log
