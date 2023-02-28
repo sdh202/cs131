@@ -1,0 +1,69 @@
+#Q1:
+  501  mkdir a1
+  502  cd a1
+  503  ls
+  504  cd
+
+#Q2: 2 Methods of getting home directory
+  505  cd
+  506  pwd
+  507  echo $HOME
+
+#Q3: 
+  508  id -u
+  509  id
+ 
+#Q4:
+  510  mkdir temp
+  511  chmod u-x temp
+  512  cd temp
+  513  ls temp
+  514  ls -l
+  515  touch temp/test.txt
+  516  ls -l temp
+
+#Q5:
+  517  mkdir temp2
+  518  mv temp2 temp3
+  519  ls
+  520  cp -r temp3 temp3copy
+  521  ls
+  522  ls temp3copy
+  523  ls temp3
+
+#Q6:
+  524  ls /proc/ | grep mem
+  525  ls /proc/ | grep cpu
+
+#Q7:
+  526  head /proc/meminfo
+
+#Q8:
+  527  head /proc/cpuinfo
+  528  tail /proc/cpuinfo
+  529  cat /proc/cpuinfo
+
+#Q9: 
+  537  cp /home/test/A1/downloaded_hashtags_extend.csv a1/
+  538  cd a1
+  539  ls
+  540  stat downloaded_hashtags_extend.csv 
+  541  wc -l downloaded_hashtags_extend.csv 
+
+#Q10: (Either Method)
+  544  grep -i "great" downloaded_hashtags_extend.csv | wc -l
+  545  cut -d ',' -f2 downloaded_hashtags_extend.csv | grep -i "great" | wc -l
+ 
+#Q11:
+  546  file downloaded_hashtags_extend.csv 
+ 
+#Q12: 
+  560  iconv -f utf-8 -t ascii -o downloaded_hashtags_extend.csv downloaded_hashtags_extend.csv 
+  561  file downloaded_hashtags_extend.csv 
+ 
+#Q13:
+  562  head downloaded_hashtags_extend.csv 
+  563  cut -d ',' -f1 downloaded_hashtags_extend.csv | sort -u | wc -l
+  564  cut -d ',' -f4 downloaded_hashtags_extend.csv | sort -u | wc -l
+  565  cut -d ',' -f2 downloaded_hashtags_extend.csv | sort -u | wc -l
+  566  history > cmds.log
