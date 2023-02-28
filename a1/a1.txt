@@ -41,14 +41,14 @@ touch: cannot touch 'temp/test.txt': Permission denied
 bash-4.4$ mkdir temp[K[K[K[K[K[K[K[K[K[Kls-l -l[C[C temo[Kp
 total 0
 
-#Q5: No, cannot use mv. Yes, can cp. Yes, can cp directory using cp -r
+#Q5: Yes, can use mv. Yes, can cp. Yes, can cp directory using cp -r
 bash-4.4$ mkdir temp2
 bash-4.4$ mv temp2 temp3
 bash-4.4$ ls
-temp  temp2  temp3
+temp  temp3
 bash-4.4$ cp -r temp3 temp3copy
 bash-4.4$ ls
-temp  temp2  temp3  temp3copy
+temp  temp3  temp3copy
 bash-4.4$ ls temp3copy
 bash-4.4$ ls temp3
 
