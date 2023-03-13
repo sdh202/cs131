@@ -1,0 +1,14 @@
+  786  mkdir ws5
+  787  mkdir CUSTOMERS
+  788  mv CUSTOMERS/ ws5
+  789  ls
+  790  ls ws5
+  791  cut -f2 ~/amazon_reviews_us_Books_v1_02.tsv | sort -g | uniq -c | sort -gr | head -15
+  792  cut -f2 ~/amazon_reviews_us_Books_v1_02.tsv | sort -g | uniq -c | sort -gr | cut -b9- | head -200 > topcustomers.txt
+  793  ls
+  795  for customer in `cat topcustomers.txt` ; do grep -En "^.*\s${customer}\s" amazon_reviews_us_Books_v1_02.tsv  > ws5/CUSTOMERS/${id}.txt ; done
+  796  ls
+  804  for customer in `cat topcustomers.txt` ; do grep -En "^.*\s${customer}\s" amazon_reviews_us_Books_v1_02.tsv > ws5/CUSTOMERS/${customer}.txt ; done
+  805  ls ws5/CUSTOMERS/
+  806  ls
+  807  history > cmds.log
