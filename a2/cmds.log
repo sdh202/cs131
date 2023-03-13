@@ -1,0 +1,858 @@
+    1  passwd
+    2  ping 172.31.197.164
+    3  wget www.github.com
+    4  ping 172.29.96.76
+    5  wget www.github.com
+    6  ping 172.31.197.164
+    7  cd desktop
+    8  cd ~/Desktop
+    9  mkdir CS131
+   10  cd cs131
+   11  rmdir cs131
+   12  cs CS131
+   13  cdCS131
+   14  cd CS131
+   15  cd
+   16  ls
+   17  rmdir CS131
+   18  git init
+   19  cd Desktop
+   20  mkdir ws1
+   21  history > cmds.log
+   22  git status
+   23  cd ws1
+   24  ls
+   25  cd
+   26  cd ws1
+   27  cd
+   28  cd cmds.log
+   29  mv cmds.log ws1
+   30  cd ws1
+   31  ls
+   32  git add ws1
+   33  ls
+   34  cd
+   35  git add ws1
+   36  ls
+   37  git status
+   38  git commit -m "Added cmds.log"
+   39    git config --global user.email "you@example.com"
+   40    git config --global user.email "sarthak.dhomne@sjsu.edu"
+   41    git config --global user.name "Sarthak"
+   42  git commit -m "Added cmds.log"
+   43  git branch
+   44  git remote add origin https://github.com/sdh202/cs131.git
+   45  git branch -M main
+   46  git push -u origin main
+   47  git remote add origin https://github.com/sdh202/cs131.git
+   48  git branch -M main
+   49  git push -u origin main
+   50  doskey /history
+   51  ls
+   52  doskey /history
+   53  /history
+   54  /HISTORY
+   55  ls
+   56  git status
+   57  git add ws1
+   58  git status
+   59  ls
+   60  cd ws1
+   61  ls
+   62  cd
+   63  ls
+   64  git commit -m "added ws1"
+   65  git remote add origin https://github.com/sdh202/cs131.git
+   66  git branch -M main
+   67  git push -u origin main
+   68  ping 172.31.197.164
+   69  wget www.github.com
+   70  ls
+   71  git init
+   72  mkdir ws1
+   73  git add ws1
+   74  history > cmds.log
+   75  move cmds.log ws1
+   76  mv cmds.log ws1
+   77  ls
+   78  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   79  grep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   80  grep "verified
+   81  grep "verified"
+   82  grep "verified" amazon_reviews_us_Books_v1_02.tsv
+   83  amazon_reviews_us_Books_v1_02.tsv.gz
+   84  ls
+   85  cd amazon_reviews_us_Books_v1_02.tsv.gz
+   86  grep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   87  grep -n "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   88  grep -n "e" amazon_reviews_us_Books_v1_02.tsv.gz
+   89  grep -n "unverified" amazon_reviews_us_Books_v1_02.tsv.gz
+   90  grep "unverified" amazon_reviews_us_Books_v1_02.tsv.gz
+   91  grep -c "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   92  grep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   93  grep "a" amazon_reviews_us_Books_v1_02.tsv.gz
+   94  grep -a "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+   95  grep verified amazon_reviews_us_Books_v1_02.tsv.gz
+   96  grep -a verified amazon_reviews_us_Books_v1_02.tsv.gz
+   97  grep -a unverified amazon_reviews_us_Books_v1_02.tsv.gz
+   98  zgrep verified amazon_reviews_us_Books_v1_02.tsv.gz
+   99  zgrep "verified" amazon_reviews_us_Books_v1_02.tsv.gz
+  100  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  101  extract amazon_reviews_us_Books_v1_02.tsv.gz
+  102  tar xvf amazon_reviews_us_Books_v1_02.tsv.gz
+  103  ls
+  104  tar zxvf amazon_reviews_us_Books_v1_02.tsv.gz
+  105  unzip amazon_reviews_us_Books_v1_02.tsv.gz
+  106  extract amazon_reviews_us_Books_v1_02.tsv.gz
+  107  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  108  ls
+  109  grep "verified" amazon_reviews_us_Books_v1_02.tsv
+  110  grep -e "verified" amazon_reviews_us_Books_v1_02.tsv
+  111  grep -n "verified" amazon_reviews_us_Books_v1_02.tsv
+  112  grep -E "verified" amazon_reviews_us_Books_v1_02.tsv
+  113  cat amazon_reviews_us_Books_v1_02.tsv
+  114  grep -E "unverified" amazon_reviews_us_Books_v1_02.tsv
+  115  grep -n 'verified' amazon_reviews_us_Books_v1_02.tsv
+  116  grep -E -w "verified" amazon_reviews_us_Books_v1_02.tsv
+  117  grep -w "verified" amazon_reviews_us_Books_v1_02.tsv
+  118  grep -h "verified" amazon_reviews_us_Books_v1_02.tsv
+  119  grep -e "unverified" amazon_reviews_us_Books_v1_02.tsv
+  120  grep -e "verified" amazon_reviews_us_Books_v1_02.tsv
+  121  grep -w "verified" amazon_reviews_us_Books_v1_02.tsv
+  122  grep -w "unverified" amazon_reviews_us_Books_v1_02.tsv
+  123  cat amazon_reviews_us_Books_v1_02.tsv | head -n 1
+  124  cat amazon_reviews_us_Books_v1_02.tsv | head -n 10
+  125  view amazon_reviews_us_Books_v1_02.tsv
+  126  grep -w "T" amazon_reviews_us_Books_v1_02.tsv
+  127  marketplace     customer_id     review_id       product_id      product_parent  product_title   product_category        star_rating     helpful_votes   total_votes  vine    verified_purchase       review_headline review_body     review_date
+  128  grep -w 'N'.(\t).'Y' amazon_reviews_us_Books_v1_02.tsv
+  129  grep -w 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  130  grep -E 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  131  grep -E -w 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  132  egrep -w 'N'.\t.'Y' amazon_reviews_us_Books_v1_02.tsv
+  133  egrep -w "N"."\t"."Y" amazon_reviews_us_Books_v1_02.tsv
+  134  egrep -w "N"."\t" amazon_reviews_us_Books_v1_02.tsv
+  135  egrep -w "N       N" amazon_reviews_us_Books_v1_02.tsv
+  136  egrep -w "N       Y" amazon_reviews_us_Books_v1_02.tsv
+  137  egrep "N       Y" amazon_reviews_us_Books_v1_02.tsv
+  138  egrep "Y       Y" amazon_reviews_us_Books_v1_02.tsv
+  139  egrep "Y       " amazon_reviews_us_Books_v1_02.tsv
+  140  egrep "N."       "."Y" amazon_reviews_us_Books_v1_02.tsv
+  141  grep "Y      Y " amazon_reviews_us_Books_v1_02.tsv
+  142  grep "Y      Y" amazon_reviews_us_Books_v1_02.tsv
+  143  grep "Y/tY" amazon_reviews_us_Books_v1_02.tsv
+  144  egrep "Y/tY" amazon_reviews_us_Books_v1_02.tsv
+  145  grep -E "Y/tY" amazon_reviews_us_Books_v1_02.tsv
+  146  grep -E "Y/t" amazon_reviews_us_Books_v1_02.tsv
+  147  grep -E "Y\tY" amazon_reviews_us_Books_v1_02.tsv
+  148  grep  "Y\tY" amazon_reviews_us_Books_v1_02.tsv
+  149  grep  "N\tY" amazon_reviews_us_Books_v1_02.tsv
+  150  grep -E "N\tY" amazon_reviews_us_Books_v1_02.tsv
+  151  grep -E "Y[[:space:]]\+Y" amazon_reviews_us_Books_v1_02.tsv
+  152  grep -E "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  153  grep -E "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  154  grep -E "N" amazon_reviews_us_Books_v1_02.tsv
+  155  grep -E "N\t" amazon_reviews_us_Books_v1_02.tsv
+  156  grep -E -w "N\t" amazon_reviews_us_Books_v1_02.tsv
+  157  grep -E -w "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  158  grep -E "N       N" amazon_reviews_us_Books_v1_02.tsv
+  159  grep -E -w "N       N" amazon_reviews_us_Books_v1_02.tsv
+  160  grep -E -w "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  161  grep -E "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  162  grep -w "N[[:space:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  163  grep -w "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  164  grep -w "N[[:\t:]]\+N" amazon_reviews_us_Books_v1_02.ts
+  165  grep -w "N\tN" amazon_reviews_us_Books_v1_02.tsv
+  166  grep -w "N[[:\t:]]\+N" amazon_reviews_us_Books_v1_02.tsv
+  167  grep -w "N[[:space:]]\+Y" amazon_reviews_us_Books_v1_02.tsv
+  168  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  169  gunzip https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  170  ls
+  171  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+  172  ls
+  173  grep -E "[1-3]\t[NY]" amazon_reviews_us_Books_v1_02.tsv
+  174  grep -E "[NY]\t[NY]*" amazon_reviews_us_Books_v1_02.tsv
+  175  grep -E "[0-500]\t[NY]\t[NY]" amazon_reviews_us_Books_v1_02.tsv
+  176  grep -E "[0-500]\t" amazon_reviews_us_Books_v1_02.tsv
+  177  grep -E "[0-500]/t" amazon_reviews_us_Books_v1_02.tsv
+  178  grep -E "[0-500]\t" amazon_reviews_us_Books_v1_02.tsv
+  179  egrep $'[0-500]\011Y' amazon_reviews_us_Books_v1_02.tsv
+  180  egrep $'[0-500]\011[YN]\011[YN]' amazon_reviews_us_Books_v1_02.tsv
+  181  egrep $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  182  egrep $'[0-500]\011[YN]\011[N]' amazon_reviews_us_Books_v1_02.tsv
+  183  wc -l $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  184  wc $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  185  wc -l '[0-500]\t[YN]\t[Y]' amazon_reviews_us_Books_v1_02.tsv
+  186  wc $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  187  egrep -c $'[0-500]\011[YN]\011[Y]' amazon_reviews_us_Books_v1_02.tsv
+  188  egrep -c $'[0-500]\011[YN]\011[N]' amazon_reviews_us_Books_v1_02.tsv
+  189  egrep '[0-500]\s+[YN]\s+[N]' amazon_reviews_us_Books_v1_02.tsv
+  190  egrep -c '[0-500]\s+[YN]\s+[N]' amazon_reviews_us_Books_v1_02.tsv
+  191  touch counts.txt
+  192  catamazon_reviews_us_Books_v1_02.tsv
+  193  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[Y]'|wc-l|>counts.txt
+  194  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[N]'|wc-l|>counts.txt
+  195  git add ws2
+  196  touch ws2
+  197  git add ws2
+  198  history > cmds.log
+  199  git add cmds.log
+  200  git status
+  201  mv cmds.log ws2
+  202  mv counts.txt ws2
+  203  git status
+  204  git commit -m "Added ws2"
+  205  git push origin main
+  206  mkdir ws2
+  207  ls
+  208  cd ws2
+  209  mkdir ws2
+  210  del ws2
+  211  rm ws2
+  212  ls
+  213  mkdir ws2
+  214  ls
+  215  git add ws2
+  216  mv cmds.log ws2
+  217  ls
+  218  ls cmds.log
+  219  git status
+  220  ls
+  221  history > cmds.log
+  222  ls
+  223  mv cmds.log ws2
+  224  mv counts.txt ws2
+  225  cat amazon_reviews_us_Books_v1_02.tsv|egrep $'[0-500]\011[YN]\011[N]'|wc-l|>counts.txt
+  226  touch counts.txt
+  227  mv counts.txt ws2
+  228  git status
+  229  ls
+  230  ls ws2
+  231  git commit -m "ws2"
+  232  git push origin main
+  233  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
+  234  git push origin main
+  235  cat amazon_reviews_us_Books_v1_02.tsv -head
+  236  cat -head amazon_reviews_us_Books_v1_02.tsv -head
+  237  head amazon_reviews_us_Books_v1_02.tsv
+  238  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn
+  239  man cut
+  240  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n1
+  241  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3
+  242  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3
+  243  cut -f6 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3
+  244  cut -f5 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3
+  245  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3
+  246  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3
+  247  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3 > ws3.txt
+  248  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n3 >> ws3.txt
+  249  cat ws3.txt
+  250  mv ws3.txt ws3
+  251  history > cmds.log
+  252  ls
+  253  mv cmds.log ws3
+  254  ls ws3
+  255  cat cmds.log
+  256  cd ws3
+  257  cat cmds.log
+  258  vi cmds.log
+  259  ls
+  260  cd
+  261  ls
+  262  cd ws3
+  263  vi ws3.txt
+  264  cat ws3.txt
+  265  vi cmds.log
+  266  ls
+  267  ls ws3
+  268  vi cmds.log
+  269  cat ws3.txt
+  270  cd ws3
+  271  ls
+  272  cat cmds.log
+  273  cat ws3.txt
+  274  vi cmds.log
+  275  vi ws3.txt
+  276  grep 0525947647 amazon_reviews_us_Books_v1_02.tsv
+  277  cd
+  278  grep 0525947647 amazon_reviews_us_Books_v1_02.tsv
+  279  cd ws3
+  280  vi ws3.txt
+  281  cat ws3.txt
+  282  ls
+  283  cd
+  284  git add ws3
+  285  git status
+  286  git commit -m "Added ws3"
+  287  git push origin main
+  288  man sort
+  289  help sort
+  290  man sort
+  291  help -d sort
+  292  man -k sort
+  293  help sort -gr
+  294  help ls
+  295  info ls
+  296  ps aux
+  297  echo $?
+  298  who
+  299  wc who
+  300  wc | who
+  301  who > users.txt
+  302  ls
+  303  cat users.txt
+  304  cat users.txt | wc -l
+  305  who | wc -l
+  306  help wc -l
+  307  wh -l <
+  308  clear
+  309  who | tee users.txt
+  310  wc users.txt
+  311  wc -l users.txt
+  312  man who
+  313  man ps
+  314  nano ~/.bashrc
+  315  l
+  316  man script
+  317  script ws4.txt
+  318  cat ws4.txt
+  319  rm ws4.txt
+  320  ls
+  321  script ws4.txt
+  322  vim ~/.bashrc
+  323  l
+  324  w
+  325  mkdir ws4
+  326  cd ws4
+  327  mkdir CUSTOMERS
+  328  mkdir PRODUCTS
+  329  head -n 10 amazon_reviews_us_Books_v1_02.tsv
+  330  cd
+  331  ls
+  332  head -n 10 amazon_reviews_us_Books_v1_02.tsv
+  333  egrep $'(.*\t){1}12703090\t\' amazon_reviews_us_Books_v1_02.tsv 
+  334  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv 
+  335  egrep $'(.*\t){1}50732546\t && (.*\t){8}*\t' amazon_reviews_us_Books_v1_02.tsv 
+  336  egrep $'(.*\t){1}50732546\t && (.*\t){8}.*\t' amazon_reviews_us_Books_v1_02.tsv 
+  337  egrep $'(.*\t){1}50732546\t amazon_reviews_us_Books_v1_02.tsv | egrep $'(.*\t){8}*\t'
+  338  egrep $'(.*\t){1}50732546\t amazon_reviews_us_Books_v1_02.tsv | egrep $'(.*\t){8}.*\t'
+  339  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | egrep $'(.*\t){8}.*\t'
+  340  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | egrep $'(.*\t){8}.0\t'
+  341  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | egrep $'(.*\t){8}0\t'
+  342  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | egrep $'(.*\t){8}0\t'
+  343  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'  '
+  344  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	'
+  345  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > CUSTOMERS/customerID.txt
+  346  ls
+  347  cat customerID.txt
+  348  nano customerID.txt
+  349  mv customerID.txt ws4/CUSTOMERS
+  350  CD WS4/CUSTOMERS
+  351  cd WS4/CUSTOMERS
+  352  cd ws4/CUSTOMERS
+  353  ls
+  354  cd
+  355  ls
+  356  cd ws4
+  357  ls
+  358  cd CUSTOMERS
+  359  ls
+  360  cat customerID.txt 
+  361  egrep $'(.*\t){3}60875410\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > productID.txt
+  362  cd
+  363  egrep $'(.*\t){3}60875410\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > productID.txt
+  364  ls
+  365  cat productID.txt
+  366  egrep $'(.*\t){3}60875410\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > productID.txt
+  367  cat productID.txt
+  368  egrep $'(.*\t){3}60875410\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	'
+  369  egrep $'(.*\t){3}60875410\t' amazon_reviews_us_Books_v1_02.tsv | cut -f8 -d'	'
+  370  egrep $'(.*\t){4}60875410\t' amazon_reviews_us_Books_v1_02.tsv | cut -f8 -d'	'
+  371  egrep $'(.*\t){3}60875410\t' amazon_reviews_us_Books_v1_02.tsv 
+  372  cd
+  373  egrep $'(.*\t){3}60875410\t' amazon_reviews_us_Books_v1_02.tsv 
+  374  egrep $'(.*\t){3}29148510\t' amazon_reviews_us_Books_v1_02.tsv 
+  375  head -n 10 amazon_reviews_us_Books_v1_02.tsv
+  376  egrep $'(.*\t){3}0300108834\t' amazon_reviews_us_Books_v1_02.tsv 
+  377  egrep $'(.*\t){4}0300108834\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	'
+  378  egrep $'(.*\t){3}0300108834\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	'
+  379  egrep $'(.*\t){3}0805076069\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	'
+  380  egrep $'(.*\t){3}0805076069\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > productID.txt
+  381  cat productID.txt 
+  382  ls
+  383  mv productID.txt ws4/PRODUCTS
+  384  ls ws4
+  385  ls ws4/PRODUCTS/
+  386  ls ws4/CUSTOMERS/
+  387  cd ws4/CUSTOMERS/
+  388  cat productID.txt
+  389  rm productID.txt
+  390  ls
+  391  cat customerID.txt
+  392  cd ws4
+  393  cd
+  394  cd ws4
+  395  cd ws4/CUSTOMERS
+  396  ls
+  397  cd CUSTOMERS
+  398  paste -sd+ customerID.txt | echo "scale=2; (\'cat\') / \'wc -l\'" | bc
+  399  paste -sd+ customerID.txt | echo "scale=2; ('\cat\') / \'wc -l\'" | bc
+  400  paste -sd+ customerID.txt | echo "scale=2; (\'cat\') / \'cat customerID.txt | wc -l\'" | bc
+  401  (standard_in) 1: illegal character: \
+  402  (standard_in) 1: illegal character: '
+  403  (standard_in) 1: illegal character: \
+  404  (standard_in) 1: illegal character: '
+  405  (standard_in) 1: illegal character: \
+  406  (standard_in) 1: illegal character: '
+  407  (standard_in) 1: syntax error
+  408  (standard_in) 1: illegal character: |
+  409  (standard_in) 1: illegal character: \
+  410  (standard_in) 1: illegal character: '
+  411  paste -sd'+' customerID.txt | echo "scale=2; (\'cat\') / \'wc -l\ < customerID.txt\'" | bc
+  412  echo "scale=2; $(paste -sd+ customerID.txt) / $(wc -l < customerID.txt)" | bc
+  413  ls
+  414  cd ws4
+  415  ls
+  416  cd CUSTOMERS
+  417  ls
+  418  echo "scale=2; $(paste -sd+ customerID.txt) / $(wc -l < customerID.txt)" | bc
+  419  paste -sd'+' customerID.txt | echo "scale=2; (\'cat\') / \'wc -l\ < customerID.txt\'" | bc
+  420  echo "scale=2; $(paste -sd+ customerID.txt) / $(wc -l < customerID.txt)" | bc
+  421  cat customerID.txt 
+  422  echo "scale=2; $(paste -sd+ customerID.txt) / $(wc -l < customerID.txt)" | bc
+  423  echo "scale=2; $(paste -sd+ customerID.txt) / (wc -l < customerID.txt)" | bc
+  424  echo "scale=2; $(paste -sd+ customerID.txt) / $(wc -l < customerID.txt)" | bc
+  425  echo "scale=2; $(paste -sd+ customerID.txt) / $(wc -l customerID.txt)" | bc
+  426  echo "scale=2; $(paste -sd+ customerID.txt) / $(wc -l < customerID.txt)" | bc
+  427  echo "scale=2; $(paste -sd+ customerID.txt) | bc
+  428  wc -l < customerID.txt 
+  429  ls
+  430  cd PRODUCTS
+  431  cd
+  432  ls
+  433  cd ws4
+  434  cd PRODUCTS
+  435  cat productID.txt 
+  436  wc -l < productID.txt 
+  437  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'  '
+  438  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > CUSTOMERS/customerID.txt
+  439  cd ws4
+  440  ls
+  441  cd
+  442  cd ws4
+  443  cd CUSTOMERS/
+  444  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > CUSTOMERS/customerID.txt
+  445  mv customerID.txt home
+  446  cd
+  447  ls
+  448  cd home
+  449  cd ws4
+  450  ls
+  451  cd CUSTOMERS/
+  452  ls
+  453  cd home
+  454  cat home
+  455  cd
+  456  egrep $'(.*\t){1}50732546\t' amazon_reviews_us_Books_v1_02.tsv | cut -f9 -d'	' > customerID.txt
+  457  ls
+  458  cat customerID.txt
+  459  wc -l < customerID.txt 
+  460  mv customerID.txt ws4/CUSTOMERS/
+  461  cd ws4/CUSTOMERS/
+  462  ls
+  463  rm home
+  464  ls
+  465  cd ws4
+  466  cd
+  467  cd ws4/PRODUCTS/
+  468  echo "scale=2; $(paste -sd+ productID.txt) / $(wc -l < productID.txt)" | bc
+  469  paste -sd+ productID.txt | bc
+  470  wc -l < productID.txt 
+  471  $(paste -sd+ productID.txt) / $(wc -l < productID.txt) | bc
+  472  echo "$(paste -sd+ productID.txt) / $(wc -l < productID.txt)" | bc
+  473  "$(paste -sd+ productID.txt) / $(wc -l < productID.txt)" | bc
+  474  $(paste -sd+ productID.txt) / $(wc -l < productID.txt) | bc
+  475  echo "$(paste -sd+ productID.txt) / $(wc -l < productID.txt)" | bc
+  476  (paste -sd+ productID.txt; echo "/"; wc -l < productID.txt) | bc
+  477  $ sum=$(awk '{print $2}' productID.txt | paste -sd+ | bc); echo "$sum / $(cat productID.txt | wc -l)" | bc -l
+  478  cd
+  479  ls
+  480  cd ws4
+  481  ls
+  482  cd CUSTOMERS
+  483  ls
+  484  cd
+  485  awk '{sum+=$1} END {print sum/NR}' numbers.txt | bc
+  486  cd ws4/CUSTOMERS/
+  487  awk '{sum+=$1} END {print sum/NR}' customerID.txt | bc
+  488  cd
+  489  cd ws4/PRODUCTS/
+  490  awk '{sum+=$1} END {print sum/NR}' productID.txt | bc
+  491  mv productID.txt 0805076069.txt
+  492  ls
+  493  cd
+  494  cd ws4/CUSTOMERS/
+  495  mv customerID.txt 50732546.txt
+  496  ls
+  497  cd
+  498  history > cmds.log
+  499  nano cmds.log
+  500  ls
+  501  mkdir a1
+  502  cd a1
+  503  ls
+  504  cd
+  505  pwd
+  506  echo $HOME
+  507  cd a1
+  508  id -u
+  509  id
+  510  mkdir temp
+  511  chmod u-x temp
+  512  cd temp
+  513  ls temp
+  514  ls -l
+  515  touch temp/test.txt
+  516  ls -l temp
+  517  mkdir temp2
+  518  mv temp2 temp3
+  519  ls
+  520  cp -r temp3 temp3copy
+  521  ls
+  522  ls temp3copy
+  523  ls temp3
+  524  ls /proc/ | grep mem
+  525  ls /proc/ | grep cpu
+  526  head /proc/meminfo
+  527  head /proc/cpuinfo
+  528  tail /proc/cpuinfo
+  529  cat /proc/cpuinfo
+  530  cp /home/test/A1/downloaded_hashtags_extend.csv a1/
+  531  cp /home/test/A1/downloaded_hashtags_extend.csv a1
+  532  ls
+  533  rm a1
+  534  ls
+  535  cd
+  536  ls
+  537  cp /home/test/A1/downloaded_hashtags_extend.csv a1/
+  538  cd a1
+  539  ls
+  540  stat downloaded_hashtags_extend.csv 
+  541  wc -l downloaded_hashtags_extend.csv 
+  542  head downloaded_hashtags_extend.csv 
+  543  head -30 downloaded_hashtags_extend.csv 
+  544  grep -i "great" downloaded_hashtags_extend.csv | wc -l
+  545  cut -d ',' -f2 downloaded_hashtags_extend.csv | grep -i "great" | wc -l
+  546  file downloaded_hashtags_extend.csv 
+  547  iconv -f utf-8 -t ascii downloaded_hashtags_extend.csv
+  548  file downloaded_hashtags_extend.csv 
+  549  ls
+  550  iconv -f utf-8 -t ascii downloaded_hashtags_extend.csv > downloaded_hashtags_extend.csv 
+  551  file downloaded_hashtags_extend.csv 
+  552  cat downloaded_hashtags_extend.csv 
+  553  rm downloaded_hashtags_extend.csv 
+  554  cp /home/test/A1/downloaded_hashtags_extend.csv a1/
+  555  cd
+  556  cp /home/test/A1/downloaded_hashtags_extend.csv a1/
+  557  cd a1
+  558  ls
+  559  file downloaded_hashtags_extend.csv 
+  560  iconv -f utf-8 -t ascii -o downloaded_hashtags_extend.csv downloaded_hashtags_extend.csv 
+  561  file downloaded_hashtags_extend.csv 
+  562  head downloaded_hashtags_extend.csv 
+  563  cut -d ',' -f1 downloaded_hashtags_extend.csv | sort -u | wc -l
+  564  cut -d ',' -f4 downloaded_hashtags_extend.csv | sort -u | wc -l
+  565  cut -d ',' -f2 downloaded_hashtags_extend.csv | sort -u | wc -l
+  566  script a1.txt
+  567  history > cmds.log
+  568  ls
+  569  mv a1.txt a1
+  570  mv cmds.log a1
+  571  nano cmds.log
+  572  cd a1
+  573  ls
+  574  cd
+  575  ls
+  576  cd a1
+  577  nano cmds.log
+  578  nano a1.txt
+  579  ls
+  580  cd temp3
+  581  ls
+  582  cd
+  583  cd a1
+  584  ls temp
+  585  mkdir temp2
+  586  chmod u-x temp2
+  587  ls
+  588  cat cmds.log
+  589  cd
+  590  ls
+  591  ls a1
+  592  cat a1/cmds.log 
+  593  history > cmds.log
+  594  ls
+  595  nano cmds.log
+  596  ls
+  597  cd a1
+  598  ls
+  599  cat cmds.log 
+  600  rm cmds.log 
+  601  cd
+  602  ls
+  603  cat cmds.log
+  604  mv cmds.log a1
+  605  ls
+  606  ls a1
+  607  cat a1/cmds.log 
+  608  nano a1/a1.txt 
+  609  nano a1/cmds.log 
+  610  ls a1
+  611  cd
+  612  ls
+  613  git add a1
+  614  git commit -m "Added a1"
+  615  git status
+  616  git push origin main
+  617  ls a1
+  618  nano a1/downloaded_hashtags_extend.csv 
+  619  nano a1/a1.txt 
+  620  cd
+  621  git add a1
+  622  git commit -m "updated a1.txt"
+  623  git push origin main
+  624  exit
+  625  exit
+  626  tmux kill-session
+  627  tmux
+  628  tmux ls
+  629  tmux new-session -s cs131a2
+  630  tmux ls
+  631  tmux cs131a2
+  632  tmux
+  633  whoami
+  634  nano sphere.gnu
+  635  gnuplot sphere.gnu 
+  636  ls
+  637  sudo apt-get install gnuplot
+  638  apt-get install gnuplot
+  639  rm sphere.gnu 
+  640  ls
+  641  script ws5.txt
+  642  mkdir ws5
+  643  cd ws5
+  644  ls
+  645  mkdir CUSTOMERS
+  646  ls
+  647  cd CUSTOMERS/
+  648  touch script.sh 
+  649  nano script.sh
+  650  ls
+  651  nano script.sh
+  652  mv script.sh ws5
+  653  cd
+  654  cd ws5
+  655  ls
+  656  ls CUSTOMERS/
+  657  mv script.sh CUSTOMERS/
+  658  ls ws5
+  659  ls
+  660  cd CUSTOMERS/
+  661  ls
+  662  ls ws5
+  663  cd ws5
+  664  cat ws5
+  665  nano ws5
+  666  rm ws5
+  667  ls
+  668  cd
+  669  cd ws5
+  670  ls
+  671  touch script.sh
+  672  ls
+  673  nano script.sh 
+  674  ./script.sh
+  675  chmod +x script.sh 
+  676  ./script.sh
+  677  nano script.sh 
+  678  ./script.sh
+  679  nano script.sh 
+  680  ./script.sh
+  681  cd
+  682  ls
+  683  cd ws5
+  684  ls
+  685  mv script.sh ~/
+  686  cd
+  687  ls
+  688  ./script.sh
+  689  ls
+  690  cd ws5
+  691  ls
+  692  ls CUSTOMERS/
+  693  cd
+  694  cd ws5/CUSTOMERS/
+  695  ls
+  696  cd
+  697  nano script.sh 
+  698  ./script.sh
+  699  nano script.sh 
+  700  ./script.sh
+  701  nano script.sh 
+  702  ./script.sh
+  703  ls
+  704  cd ws5/CUSTOMERS/
+  705  ls
+  706  cat 21922.txt 
+  707  ls
+  708  cd
+  709  nano script.sh 
+  710  cd ws5
+  711  ls
+  712  rm CUSTOMERS/
+  713  rmdir CUSTOMERS/
+  714  rmdir -r CUSTOMERS/
+  715  rm -r CUSTOMERS/
+  716  ls
+  717  mkdir CUSTOMERS
+  718  ls
+  719  cd
+  720  nano script.sh 
+  721  ./script.sh
+  722  cd ws5/CUSTOMERS/
+  723  ls
+  724  ls -l | wc -l
+  725  cat 383.txt
+  726  nano script.sh 
+  727  ls
+  728  cd
+  729  nano script.sh 
+  730  history > cmds.log
+  731  ls
+  732  nano cmds.log
+  733  ls
+  734  mv cmds.log ws5
+  735  mv script.sh ws5
+  736  cd ws5
+  737  ls
+  738  nano script.sh
+  739  nano cmds.log 
+  740  ls
+  741  cd
+  742  ls
+  743  mv ws5.txt ws5
+  744  ls
+  745  ls ws5
+  746  git add ws5
+  747  ls
+  748  cat ws5.txt
+  749  script -a ws5.txt
+  750  git add ws5
+  751  git status
+  752  git add ws5
+  753  git commit -m "added ws5"
+  754  git push origin main
+  755  ls
+  756  cd ws5
+  757  ls
+  758  nano script.sh 
+  759  rm -r CUSTOMERS/
+  760  ls
+  761  ./script.sh
+  762  cd
+  763  ./script.sh
+  764  cd ws5
+  765  mv script.sh ~/
+  766  cd
+  767  nano script.sh 
+  768  ./script.sh
+  769  cd ws5
+  770  ls
+  771  mkdir CUSTOMERS
+  772  ls
+  773  cd
+  774  nano script.sh 
+  775  ls
+  776  ./script.sh
+  777  cd ws5
+  778  ls
+  779  ls CUSTOMERS/
+  780  cd
+  781  ls
+  782  mv script.sh ws5
+  783  git add ws5
+  784  git commit -m "updated ws5"
+  785  git push origin main
+  786  mkdir ws5
+  787  mkdir CUSTOMERS
+  788  mv CUSTOMERS/ ws5
+  789  ls
+  790  ls ws5
+  791  cut -f2 ~/amazon_reviews_us_Books_v1_02.tsv | sort -g | uniq -c | sort -gr | head -15
+  792  cut -f2 ~/amazon_reviews_us_Books_v1_02.tsv | sort -g | uniq -c | sort -gr | cut -b9- | head -200 > topcustomers.txt
+  793  ls
+  794  nano topcustomers.txt
+  795  for customer in `cat topcustomers.txt` ; do grep -En "^.*\s${customer}\s" amazon_reviews_us_Books_v1_02.tsv  > ws5/CUSTOMERS/${id}.txt ; done
+  796  ls
+  797  ls ws5/CUSTOMERS/
+  798  ls ws5
+  799  cd ws5/CUSTOMERS/
+  800  ls
+  801  for customer in `cat topcustomers.txt` ; do grep -En "^.*\s${customer}\s" amazon_reviews_us_Books_v1_02.tsv > ws5/CUSTOMERS/${id}.txt ; done
+  802  cd
+  803  for customer in `cat topcustomers.txt` ; do grep -En "^.*\s${customer}\s" amazon_reviews_us_Books_v1_02.tsv > ws5/CUSTOMERS/${id}.txt ; done
+  804  for customer in `cat topcustomers.txt` ; do grep -En "^.*\s${customer}\s" amazon_reviews_us_Books_v1_02.tsv > ws5/CUSTOMERS/${customer}.txt ; done
+  805  ls ws5/CUSTOMERS/
+  806  ls
+  807  history > cmds.log
+  808  ls
+  809  mv topcustomers.txt ws5
+  810  mv cmds.log ws5
+  811  ls ws5
+  812  nano ws5/cmds.log
+  813  ls
+  814  ls ws5
+  815  cd ws5
+  816  cd
+  817  rm -r ws5
+  818  ls
+  819  script ws5.txt
+  820  mv ws5.txt ws5
+  821  ls
+  822  git add ws5
+  823  git commit -m "ws5 update"
+  824  git push origin main
+  825  echo `pwd`
+  826  echo "pwd"
+  827  pwd
+  828  echo ~
+  829  ~
+  830  cd ~
+  831  cd /
+  832  ls
+  833  cd home
+  834  ls
+  835  cd sarthak23sp/
+  836  cd
+  837  ls
+  838  ls ws5
+  839  git push origin main
+  840  ls
+  841  script a2.txt
+  842  mkdir a2
+  843  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv
+  844  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv ~
+  845  cp /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv ~
+  846  head -10 /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv
+  847  ls
+  848  script -a a2.txt
+  849  nano a2.txt 
+  850  grep "[<ReferencedTweet id=" downloaded_tweets_extend_original_nolf2.tsv | cut -f5 downloaded_tweets_extend_original_nolf2.tsv | sort | uniq -c | sort -rn | head -n11
+  851  grep "type=replied_to" downloaded_tweets_extend_original_nolf2.tsv | cut -f5 downloaded_tweets_extend_original_nolf2.tsv | sort | uniq -c | sort -rn | head -n11
+  852  egrep "type=replied_to]" downloaded_tweets_extend_original_nolf2.tsv | cut -f5 downloaded_tweets_extend_original_nolf2.tsv | sort | uniq -c | sort -rn | head -n11
+  853  egrep '[<ReferencedTweet id=[*]+ type=replied_to]' downloaded_tweets_extend_original_nolf2.tsv | cut -f5 downloaded_tweets_extend_original_nolf2.tsv | sort | uniq -c | sort -rn | head -n11
+  854  egrep '<ReferencedTweet id=[*]\+ type=replied_to' downloaded_tweets_extend_original_nolf2.tsv | cut -f5 downloaded_tweets_extend_original_nolf2.tsv | sort | uniq -c | sort -rn | head -n11
+  855  nano a2.txt
+  856  cp a2.txt a2duplicate.txt
+  857  ls
+  858  history > cmds.log
