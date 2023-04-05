@@ -1,0 +1,10 @@
+#Task 1
+awk -F'\t' '$12 == "Y" {print}' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+
+#Task 2
+head -n 20 verified.txt > verified_head20.txt
+
+#Task 3
+awk -F'\t' '{ cmnwords[$13]++ } END { for (words in cmnwords) print words, cmnwords[words] }' verified.txt | sort -k2nr | head -n 10 > top10.txt
+
+history > cmds.log
