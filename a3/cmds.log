@@ -1,0 +1,36 @@
+#Task 1
+awk -F'\t' '$5 ~ /type=replied_to/ {print $6 " " $2}' downloaded_tweets_extend_nolf2.tsv > task1.txt
+nano task1.txt
+
+#Task 2 
+nano t2.awk 
+chmod rw +x t2.awk
+./t2.awk > task2.txt
+./t2.awk task1.txt > task2.txt
+nano task2.txt 
+
+#Task3
+sudo apt-get install gnuplot
+gnuplot --version
+cd
+./gnuplot-5.4.6/
+cd gnuplot-5.4.6/
+./gnuplot
+cd src/
+./gnuplot 
+gnuplot -e "set term wxt"
+mv h1.svg ~
+cd
+cd src/
+cd gnuplot-5.4.6/
+./gnuplot
+cd src/
+./gnuplot 
+cd
+cd src/
+cd
+cd src/
+cd gnuplot-5.4.6/
+cd src/
+mv h4.svg ~
+history > cmds.log

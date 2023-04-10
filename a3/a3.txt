@@ -1,0 +1,40 @@
+Script started on 2023-04-10 01:55:09-04:00
+bash-4.4$ awk -F'\t' '$5 ~ /type=replied_to/ {print $6 " " $2}' downloaded_tweetss_extend_nolf2.tsv > task1.txt
+bash-4.4$ nano t2.awk
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.8                        t2.awk                                  [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3d(B[0;1m[34m#!/usr/bin/awk -f[5d(B[0m[32m{[6;3H[39m(B[mnum[32m[(B[0;1m[31m$1(B[0m[32m]++;[7d}[9d(B[0;1m[32mEND[39m(B[m [32m{[10;3H(B[0;1m[33mfor[39m(B[m [32m([39m(B[mreplies (B[0;1m[33min[39m(B[m num[32m)[39m(B[m [32m{[11;5H(B[0;1m[33mif[39m(B[m [32m([39m(B[mnum[32m[[39m(B[mreplies[32m][39m(B[m [32m>=[39m(B[m 3[32m)[39m(B[m [32m{[12;7H(B[0;1m[32mprint[39m(B[m replies, num[32m[[39m(B[mreplies[32m];[13;5H}[14;3H}[15d}[22d[39m(B[m[K[15;2H[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format	(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel	    (B[0;7mM-M(B[m Mac Format	(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: t2.awk                                   (B[m[22;27H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 13 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>bash-4.4$ chmod rw +x t2.awk
+chmod: invalid mode: ‘rw’
+Try 'chmod --help' for more information.
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ 
+bash-4.4$ chmod rw +x t2.awk[K[K[K[K[K[K[K[K[K[K[K[K+x t2.awk 
+bash-4.4$ ./t2.awk task1.txt > task2.txt
+bash-4.4$ ./[K[Kcd gnuplot-5.4.6
+bash-4.4$ cd .[K/s[K[K./s[K[K[K[K[K[Kls
+aclocal.m4  config.status  docs		Makefile.am    PGPKEYS	      term
+BUGS	    configure	   FAQ.pdf	Makefile.in    README	      win
+compile     configure.ac   INSTALL	man	       RELEASE_NOTES
+config	    configure.vms  INSTALL.gnu	missing        share
+config.h    Copyright	   install-sh	mkinstalldirs  src
+config.hin  demo	   m4		NEWS	       stamp-h
+config.log  depcomp	   Makefile	PATCHLEVEL     stamp-h1
+bash-4.4$ cd src
+bash-4.4$ ./gnuplot 
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> 
+gnuplot> exit
+bash-4.4$ exit
+
+Script done on 2023-04-10 01:58:22-04:00
