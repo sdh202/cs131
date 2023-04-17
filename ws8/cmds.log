@@ -1,0 +1,7 @@
+    1  vim randomsample.sh
+    2  chmod +rw +x randomsample.sh
+    3  head -n 100 amazon_reviews_us_Books_v1_02.tsv > amazonshortened.tsv
+    4  wc -l amazonshortened.tsv
+    5  ./randomsample.sh 80 amazonshortened.tsv > sampled.tsv
+    6  wc -l sampled.tsv
+    7  history > cmds.log

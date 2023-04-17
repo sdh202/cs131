@@ -1,0 +1,19 @@
+Script started on 2023-04-16 22:44:26-04:00
+
+#Original dataset used is amazonshortened.tsv, first 100 lines of full amazon dataset
+#As full amazon dataset was very large, I used this shortened one.
+
+# wc -l returns that original dataset has 100 lines:
+bash-4.4$ wc -l amazonshortened.tsv 
+100 amazonshortened.tsv
+
+# running script with x=80 and outputing to sampled.tsv
+bash-4.4$ ./randomsample.sh 80 amazonshortened.tsv > sampled.tsv
+
+#wc -l on sampled.tsv returns 80, correct as 80% of 100 lines = 80.
+bash-4.4$ wc -l sampled.tsv
+80 sampled.tsv
+
+bash-4.4$ exit
+
+Script done on 2023-04-16 22:45:41-04:00
