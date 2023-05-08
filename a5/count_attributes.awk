@@ -14,6 +14,6 @@ BEGIN {
 
 END {
     for (attribute in attributeCount) {
-        print "Attribute", attribute, "Negative Count:", attributeCount[attribute]
+        print attribute, attributeCount[attribute]
     }
 }
