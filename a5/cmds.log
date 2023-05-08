@@ -1,0 +1,17 @@
+mkdir a5
+cd a5
+wget https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Training%20Dataset.arff
+
+#Filtering out tags and attribute headers and saving to new file
+sed -n '/@data/,$p' "Training Dataset.arff" > data.txt
+
+#counting number of phishing sites: result is 1550
+vim count_phishing.awk
+chmod +x count_phishing.awk
+./count_phishing.awk data.txt > count_phishing.txt
+
+#counting number of negative attributes from the phishing sites
+vim count_attributes.awk
+chmod +x count_attributes.awk
+./count_attributes.awk > common_phishing.txt
+
